@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+        *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: sans-serif;
+        }
+        .body-wrap{
+            width:100vw;
+            background-color: #10001f;
+            background-image: url("https://www.transparenttextures.com/patterns/binding-dark.png");
+
+        }
+        .navclass{
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            width:95%;
+            height: 10vh;
+            border-bottom: 2px solid orange;
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top:0px;
+            left:1rem;
+        
+
+        }
+        .navwrap{
+            display: flex;
+            justify-content:space-evenly;
+            align-items: center;
+            width:70%;
+            height:40px;
+            color: antiquewhite;
+            
+            
+        }
+        .navwrap h1{
+            margin-right:8rem;
+        }
+        .navwrap img{
+            border-radius:50px;
+        }
+        .navlist ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap:1.5rem;
+            list-style: none;
+            flex-wrap: wrap;
+            
+        }
+        .mainwrap{
+            width:95%;
+            height: 60vh;
+            background-image: url("https://wallpaperaccess.com/full/2402088.jpg");
+            background-position: center;
+            margin-left: 1rem;
+            background-repeat: no-repeat;
+            border-bottom:2px solid orange;
+        }
+        .mainclass{
+            width:30%;
+            height:80%;
+            font-size: clamp(2.1875rem, 2.0422rem + 0.5814vw, 2.5rem);
+        }
+        .mainclass p{
+            font-weight: bolder;
+            color:antiquewhite;
+            padding-top:9.5rem;
+            padding-left: 1rem;
+        }
+        .interwrap{
+            font-size: clamp(2.1875rem, 2.0422rem + 0.5814vw, 2.5rem);
+            width:95%;
+            height:55rem;
+            color: antiquewhite;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            flex-direction:column;
+            border-bottom:2px solid orange;
+            margin-left: 1rem;
+
+        }
+        .interclass{
+            width:100%;
+            height: 80%;
+            display: flex;
+            align-items: center;
+        }
+        .coffee{
+            display: flex;
+            justify-content: center;
+            width: 95%;
+            gap:2rem;
+            height: 75%;
+            margin-left: 1rem;
+        }
+        
+        .arabica{
+            width:40%;
+            height:85%;
+            border:1px solid grey;
+            border-radius:10px;
+            font-size: clamp(1rem, 0.9038rem + 0.4396vw, 1.25rem);
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+        .robusta{
+            width:40%;
+            height:85%;
+            border:1px solid grey;
+            border-radius:10px;
+            font-size: clamp(1rem, 0.9038rem + 0.4396vw, 1.25rem);
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+            align-items: center;
+        }
+        .robusta a{
+            text-decoration: none;
+            color: cadetblue;
+        }
+        .arabica a{
+            text-decoration: none;
+            color: cadetblue;
+        }
+        .arabica p{
+            margin: 0.5rem;
+        }
+        .robusta p{
+            margin: 0.5rem;
+        }
+        .arabica img{
+            border-radius:50%;
+        }
+        .robusta img{
+            border-radius:50%;
+        }
+
+        @media only screen and (min-width:350px) and (max-width:640px) {
+            .navclass{
+                height:10rem;
+                font-size: clamp(1.25rem, 0.6818rem + 1.5152vw, 1.875rem);
+            }
+            .navwrap h1{
+                margin-right: 0;
+            }
+            .navwrap{
+                flex-direction: column;
+                width:95%;
+                height:15vh;
+                font-size: 1rem;
+            }
+            .navlist ul{
+                margin-bottom: 0.5rem;
+            }
+            .mainclass{
+                width:40%;
+                padding: 0;
+            }
+            .interwrap{
+                height: 90rem;
+            }
+            .coffee{
+                flex-direction: column;
+                height: 95%;
+                width: 95%;
+            }
+            .robusta{
+                width:95%;
+            }
+            .arabica{
+                width:95%;
+            }
+        }
+    </style>
+    </head>
+    <body>
+        <div class="body-wrap">
+            <div class="navclass">
+                <div class="navwrap">
+                    <img
+                        src="https://png.pngtree.com/png-clipart/20220119/ourmid/pngtree-coffee-icon-icon-element-png-image_4237513.png"
+                        alt width="70px">
+                    <h1>AA coffee</h1>
+                    <div class="navlist"><ul>
+                            <li style="color:orange;margin-right:20px">Home</li>
+                            <li>About</li>
+                            <li>Contact</li>
+                            <li>Market-place</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="mainwrap">
+                <div class="mainclass">
+                    <p>Start Your day with Purest
+                        Form Of Coffee
+                    </p>
+                </div>
+            </div>
+            <div class="interwrap">
+                <h1>Top Category</h1>
+                <div class="interclass">
+                    <div class="coffee">
+                        <div class="robusta">
+                            <img
+                            src="https://t4.ftcdn.net/jpg/00/60/32/95/240_F_60329517_m0OI1sxE1C4DO1MkGuDcZFGmaESUVyi8.jpg"
+                            alt="image" width="120px">
+                        <h1>ROBUSTA</h1>
+                        <p>Robusta is often talked about in contrast to arabica: it has
+                            double the caffeine of arabica beans and is generally
+                            thought of as easier to grow This particular coffee type
+                            exhibits excellent disease resistance. Robusta coffee beans
+                            have a distinctively bitter flavor</p>
+                        <a href="https://en.wikipedia.org/wiki/Coffea_canephora">More
+                            Info</a>
+                        </div>
+                        <div class="arabica">
+                            <img
+                    src="https://media.istockphoto.com/id/1470724700/photo/coffee-beans-roasted-coffee-beans-background.webp?b=1&s=170667a&w=0&k=20&c=8aFnUoLQV93ursoB3Zc1yS7rVzq2URyyLPfThMigg9k="
+                    alt="image" class="arabicaimag" width="120px">
+                <h1>ARABICA</h1>
+                <p>Arabica coffee is a type of coffee bean known for its
+                    exceptional taste and quality.Blending arabica beans often
+                    creates exclusive signature blends with unique branding and
+                    offers control over taste, aroma, body, and acidity</p>
+                <a href="https://en.wikipedia.org/wiki/Coffea_arabica">More
+                    Info</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </body>
+</html>
